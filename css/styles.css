@@ -1,0 +1,40 @@
+.main {
+  position: relative;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.main__theme-switch {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-transform: capitalize;
+}
+
+.main__box {
+  max-width: 500px;
+}
+
+.main__textarea {
+  resize: none;
+}
+
+@media (max-width: 576px) {
+  .main__title {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main__stop-btn {
+    order: 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .main__theme-switch {
+    top: 32px;
+    right: 32px;
+  }
+}

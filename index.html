@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'/>
+  <link rel='stylesheet' href='css/pico.min.css'>
+  <link rel='stylesheet' href='css/styles.css'>
+  <title>Speech Synthesis JS</title>
+</head>
+<body>
+<main class='main'>
+  <label class='main__theme-switch' for='theme-switch'>
+    <span class='theme-color'>Auto</span>
+    <input id='theme-switch' type='checkbox' role='switch' checked>
+  </label>
+
+  <div class='main__box container'>
+    <h1 class='main__title'>Speech Synthesis</h1>
+
+    <label class='form-label' for='voices'>
+      Voices
+      <select id='voices' class='form-select form-control'></select>
+    </label>
+
+    <div class='grid'>
+      <label for='rate'>
+        Speed: <span class='rate-value'>1</span>
+        <input id='rate' type='range' min='0.5' max='2' value='1' step='0.1'>
+      </label>
+      <label for='pitch'>
+        Pitch: <span class='pitch-value'>1</span>
+        <input id='pitch' type='range' min='0' max='2' value='1' step='0.1'>
+      </label>
+    </div>
+
+    <label for='text'>
+      Text
+      <textarea id='text' class='main__textarea' rows='4'></textarea>
+    </label>
+
+    <div class='grid'>
+      <button id='btn-stop' class='main__stop-btn secondary' type='button'>Stop</button>
+      <button id='btn-start' type='button'>Play</button>
+    </div>
+  </div>
+</main>
+
+<script src='js/scripts.js'></script>
+</body>
+</html>
